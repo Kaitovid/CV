@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan David Bejarano Cortes - Portafolio</title>
+ <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <header>
+    <img class="perfil" src="img/image.png" alt=""> 
+    <h1>Juan David Bejarano Cortes</h1>
+    
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <div>
+      <h2>Desarrollador Web</h2>
+      <p>Apasionado por crear experiencias digitales modernas, eficientes y atractivas.</p>
+    </div>
+  </section>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy Juan David Bejarano Cortes, desarrollador web con experiencia en diseño, programación y optimización de sitios modernos. Me gusta construir soluciones 
+        simples, funcionales y con buen diseño, buscando siempre la mejora continua.
+       <p>
+        
+        </p> Domino PHP, Node.js, PostgreSQL, JavaScript para construir soluciones Backend escalables y orientadas a satisfacer necesidades del cliente.
+Además de la sólida experiencia en desarrollo de backend, poseo entendimiento de lenguajes de programación frontend como React,, HTML y CSS. Me interesa seguir creciendo como programador full stack, para robustecer la perspectiva integral de la arquitectura de software.
+    </p>
+    <p>
+        Disfruto aprender nuevas tecnologías y enfrentar desafíos que me permitan mejorar mis habilidades. Valoro el trabajo en equipo y la colaboración, ya que creo que compartir conocimientos es clave para el crecimiento profesional y la creación de proyectos exitosos.
+    </p>
+
+    </p>
+ 
+</section>
+
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="habilidades">
+      <div class="habilidad" onmousemove="mostrarPorcentaje(event, this, 80)" onmouseleave="ocultarPorcentaje(this)">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="32" height="32">
+        HTML5
+        <!-- Porcentaje aquí -->
+        <span class="porcentaje" style="display:none; margin-left:8px;">80%</span>
+      </div>
+      <div class="habilidad" onmousemove="mostrarPorcentaje(event, this, 50)" onmouseleave="ocultarPorcentaje(this)">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="32" height="32">
+        React
+        <!-- Porcentaje aquí -->
+        <span class="porcentaje" style="display:none; margin-left:8px;">50%</span>
+      </div>
+      <div class="habilidad" onmousemove="mostrarPorcentaje(event, this, 40 )" onmouseleave="ocultarPorcentaje(this)">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="32" height="32">
+         GitHub
+        <!-- Porcentaje aquí -->
+        <span class="porcentaje" style="display:none; margin-left:8px;">85%</span>
+      </div>
+      <div class="habilidad" onmousemove="mostrarPorcentaje(event, this, 75)" onmouseleave="ocultarPorcentaje(this)">
+        <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Responsive Design" width="32" height="32">
+        Optimización
+        <!-- Porcentaje aquí -->
+        <span class="porcentaje" style="display:none; margin-left:8px;">75%</span>
+      </div>
+     
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="proyectos">
+      <div class="proyecto">
+        <img src="/img/487884179_122116547546789946_7140846866083312468_n.jpg" alt="Proyecto 1">
+        <div class="proyecto-info">
+          <h3>Proyecto 1</h3>
+          <p>Desarrollo de una página web de ventas como proyecto personal. El sitio permite a los usuarios explorar productos, agregarlos al carrito y realizar compras de manera sencilla y segura. Implementé funcionalidades como catálogo dinámico, sistema de búsqueda, gestión de usuarios y pasarela de pagos simulada. Utilicé tecnologías como HTML, CSS, JavaScript y Node.js para el backend, asegurando una experiencia de usuario fluida y un diseño responsivo adaptable a dispositivos móviles.</p>
+        </div>
+      </div>
+
+    <!-- Caja lateral con viñetas que cambian pestañas -->
+    <aside id="contacto" class="proyectos-sidebar" aria-label="Información adicional">
+      <div class="sidebar-header">
+        <h3>Contacto</h3>
+      </div>
+      <ul class="sidebar-tabs" role="tablist">
+        <li role="tab" tabindex="0" aria-selected="true" data-tab="lugar" class="tab-item">📍 Lugar</li>
+        <li role="tab" tabindex="0" aria-selected="false" data-tab="mas" class="tab-item">ℹ️ Más sobre mi</li>
+      </ul>
+
+      <div class="tab-panels">
+        <div id="lugar" class="tab-panel active" role="tabpanel">
+          <p class="location">Bucaramanga, Santander, Colombia</p>
+        <p class="download"><a href="/archivos/CV Juan David Bejarano Developer.pdf" download>📄 Descargar CV</a></p>
+        </div>
+        <div id="mas" class="tab-panel" role="tabpanel">
+          <p>Apasionado por el diseño y la tecnología. Siempre aprendiendo algo nuevo y trabajando en proyectos personales y colaborativos.</p>
+          <p>Teléfono: <strong>320 456 7890</strong></p>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <footer>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/juan-bejarano-cortes-611791334/">LinkedIn</a>
+      <a href="https://github.com/Kaitovid">GitHub</a>
+      <a href="https://www.instagram.com/kaitovid_19/">Instagram</a>
+    </div>
+    <p>© 2025 Juan David Bejarano Cortes. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Efecto scroll suave
+    document.querySelectorAll('a[href^="#"]').forEach(enlace => {
+      enlace.addEventListener('click', e => {
+        e.preventDefault();
+        const destino = document.querySelector(enlace.getAttribute('href'));
+        destino.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Mostrar porcentaje al acercar el cursor
+    function mostrarPorcentaje(event, elemento, porcentaje) {
+      const span = elemento.querySelector('.porcentaje');
+      span.style.display = 'inline';
+      // Puedes editar el porcentaje aquí
+      span.textContent = porcentaje + '%';
+    }
+    function ocultarPorcentaje(elemento) {
+      const span = elemento.querySelector('.porcentaje');
+      span.style.display = 'none';
+    }
+    
+    // Pestañas de la sidebar de proyectos
+    (function(){
+      const tabs = document.querySelectorAll('.sidebar-tabs .tab-item');
+      const panels = document.querySelectorAll('.tab-panel');
+
+      function activateTab(tab){
+        tabs.forEach(t=>{ t.setAttribute('aria-selected','false'); t.classList.remove('active'); });
+        panels.forEach(p=> p.classList.remove('active'));
+        tab.setAttribute('aria-selected','true');
+        const id = tab.getAttribute('data-tab');
+        const panel = document.getElementById(id);
+        if(panel) panel.classList.add('active');
+      }
+
+      tabs.forEach(tab=>{
+        tab.addEventListener('click', ()=> activateTab(tab));
+        tab.addEventListener('keydown', (e)=>{ if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activateTab(tab); } });
+      });
+
+      // Activar la primera por defecto
+      if(tabs.length) activateTab(tabs[0]);
+    })();
+  </script>
+
+</body>
+</html>
